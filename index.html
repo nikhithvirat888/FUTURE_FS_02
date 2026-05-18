@@ -4,17 +4,24 @@
     <title>Mini CRM</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Client Lead Management</h1>
+<h1>📋 Client Lead Manager </h1>
 
 <div class="form">
     <input type="text" id="name" placeholder="Client Name">
     <input type="email" id="email" placeholder="Email">
-    <button onclick="addLead()">Add Lead</button>
+    <button type="button" onclick="addLead()">Add Lead ➕</button>
 </div>
 
+<input type="text" id="search" placeholder="🔍 Search client..." onkeyup="searchLead()">
+
+<h3 id="count">Total Leads: 0</h3>
+
 <ul id="leadList"></ul>
+
 <script src="script.js"></script>
+
 </body>
 </html>
